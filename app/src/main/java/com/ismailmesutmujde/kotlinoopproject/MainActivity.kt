@@ -9,5 +9,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // User sınıfından myUser objesi oluşturuldu.
+        var myUser = User()
+        //myUser.age = 25
+        //myUser.name = "James"
+
+        println(myUser.age.toString())
+        println(myUser.name)
     }
 }
