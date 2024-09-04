@@ -1,9 +1,9 @@
 package com.ismailmesutmujde.kotlinoopproject
 
-class Musician (name: String, instrument: String, age: Int) {
+open class Musician (name: String, instrument: String, age: Int) {
 
     // encapsulation
-    private var name : String? = name
+    var name : String? = name
         private set
         get
 

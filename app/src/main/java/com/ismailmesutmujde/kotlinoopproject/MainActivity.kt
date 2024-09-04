@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // User sınıfından myUser objesi oluşturuldu.
+        // constructor
         var myUser = User("James", 50)
         myUser.name = "Lars"
         myUser.age = 60
@@ -17,9 +18,16 @@ class MainActivity : AppCompatActivity() {
         println(myUser.age.toString())
         println(myUser.name)
 
+        // encapsulation
         var james = Musician("James", "Guitar", 55)
         println(james.age.toString())
-        james.returnBandName("ismail")
-        james.returnBandName("kirk")
+        println(james.returnBandName("ismail"))
+        println(james.returnBandName("kirk"))
+
+        // inheritance
+        var lars = SuperMusician("Lars", "Drums", 65)
+        println(lars.name)
+        println(lars.returnBandName("ismail"))
+        lars.sing()
     }
 }
