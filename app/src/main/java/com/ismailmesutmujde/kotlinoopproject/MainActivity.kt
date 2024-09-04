@@ -29,5 +29,22 @@ class MainActivity : AppCompatActivity() {
         println(lars.name)
         println(lars.returnBandName("ismail"))
         lars.sing()
+
+        // polymorphism
+
+        // static polymorphism
+        var mathematics = Mathematics()
+        println(mathematics.sum())
+        println(mathematics.sum(3, 4))
+        println(mathematics.sum(3, 4, 5))
+
+        // dynamic polymorphism
+        val animal = Animal()
+        animal.sing()
+
+        val barley = Dog()
+        barley.test()
+        barley.sing()
+
     }
 }
