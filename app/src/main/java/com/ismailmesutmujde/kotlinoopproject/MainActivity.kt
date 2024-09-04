@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         println(myUser.age.toString())
         println(myUser.name)
+
+        var james = Musician("James", "Guitar", 55)
+        println(james.age.toString())
+        james.returnBandName("ismail")
+        james.returnBandName("kirk")
     }
 }
