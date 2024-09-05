@@ -71,5 +71,20 @@ class MainActivity : AppCompatActivity() {
 
         val multiplyLambda2 : (Int, Int) -> Int = {a,b -> a * b}
         println(multiplyLambda2(5,5))
+
+        // asynchronous(asekron-eş zamanlı olmayan)
+        // callback function, listener function, completion function
+
+        fun downloadMusicians(url : String, completion : (Musician) -> Unit) {
+            // url -> download
+            // data
+            val kirkHammet = Musician("Kirk", "Guitar", 60)
+            completion(kirkHammet)
+        }
+
+        downloadMusicians("metallica.com", { musician ->
+            println(musician.name)
+        })
+
     }
 }
