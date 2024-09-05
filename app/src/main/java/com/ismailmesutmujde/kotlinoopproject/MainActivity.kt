@@ -57,5 +57,19 @@ class MainActivity : AppCompatActivity() {
         println(myPiano.roomName)
         myPiano.info()
 
+        // Lambda Expressions
+
+        fun printString(myString: String) {
+            println(myString)
+        }
+        printString("My Test String")
+        val testString = {myString : String -> println(myString)}
+        testString("My Lambda String")
+
+        val multiplyLambda = {a:Int, b: Int -> a * b}
+        println(multiplyLambda(5,4))
+
+        val multiplyLambda2 : (Int, Int) -> Int = {a,b -> a * b}
+        println(multiplyLambda2(5,5))
     }
 }
