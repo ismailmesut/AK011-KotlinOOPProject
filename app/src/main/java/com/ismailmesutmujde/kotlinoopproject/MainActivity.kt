@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         println(myUser.age.toString())
         println(myUser.name)
+        println(myUser.information())
 
         // encapsulation
         var james = Musician("James", "Guitar", 55)
@@ -45,6 +46,16 @@ class MainActivity : AppCompatActivity() {
         val barley = Dog()
         barley.test()
         barley.sing()
+
+        // abstract & interface
+
+        //var myPeople = People()
+
+        var myPiano = Piano()
+        myPiano.brand = "Yamaha"
+        myPiano.digital = false
+        println(myPiano.roomName)
+        myPiano.info()
 
     }
 }
